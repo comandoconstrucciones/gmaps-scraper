@@ -1,0 +1,9 @@
+{
+  "actorSpecification": 1,
+  "name": "gmaps-scraper",
+  "title": "Google Maps Scraper - Comando",
+  "description": "Extrae datos de negocios desde Google Maps: nombre, dirección, teléfono, website, rating, reviews, categoría, coordenadas.",
+  "version": "1.0.0",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile"
+}
