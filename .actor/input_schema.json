@@ -1,0 +1,43 @@
+{
+  "title": "Google Maps Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "required": ["searchTerms"],
+  "properties": {
+    "searchTerms": {
+      "title": "Términos de búsqueda",
+      "type": "array",
+      "description": "Lista de términos a buscar en Google Maps (ej: 'club de tenis', 'canchas de tenis')",
+      "editor": "stringList",
+      "items": { "type": "string" }
+    },
+    "location": {
+      "title": "Ubicación",
+      "type": "string",
+      "description": "País o ciudad para la búsqueda (ej: 'Colombia', 'Bogotá, Colombia')",
+      "editor": "textfield",
+      "default": "Colombia"
+    },
+    "maxResultsPerSearch": {
+      "title": "Max resultados por búsqueda",
+      "type": "integer",
+      "description": "Máximo de resultados a extraer por cada término de búsqueda",
+      "default": 200,
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "language": {
+      "title": "Idioma",
+      "type": "string",
+      "description": "Código de idioma para los resultados",
+      "default": "es",
+      "editor": "textfield"
+    },
+    "includeDetails": {
+      "title": "Incluir detalles completos",
+      "type": "boolean",
+      "description": "Hacer click en cada resultado para extraer teléfono, website y horarios (más lento pero más datos)",
+      "default": true
+    }
+  }
+}
