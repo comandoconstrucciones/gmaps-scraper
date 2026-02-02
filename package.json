@@ -1,0 +1,14 @@
+{
+  "name": "gmaps-scraper",
+  "version": "1.0.0",
+  "description": "Google Maps Scraper - Extrae datos de negocios desde Google Maps",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "apify": "^3.0.0"
+  },
+  "author": "Comando Construcciones"
+}
